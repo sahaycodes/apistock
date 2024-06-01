@@ -75,9 +75,9 @@ def optimize():
     if request.method == 'POST':
         data = request.form
 
-        lifestyle_risk = int(data['lifestyle_risk'])
-        expected_annual_roi = float(data['expected_annual_roi'])
-        principal_amount = float(data['principal_amount'])
+        lifestyle_risk = int(input(data['lifestyle_risk']))
+        expected_annual_roi = float(input(data['expected_annual_roi']))
+        principal_amount = float(input(data['principal_amount']))
 
         info_data = [
             {"Symbol": "AAPL", "Annualized ROI": 17.624598, "Volatility": 0.027930},
