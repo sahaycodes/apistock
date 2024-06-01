@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIAA Portfolio Optimization</title>
+</head>
+<body>
+    <h1>Portfolio Optimization
+    </h1>
+    <form method="POST">
+        <label for="lifestyle_risk">Lifestyle Risk (0-2)</label>
+        <input type="number" id="lifestyle_risk" name="lifestyle_risk" required min="0" max="2"><br>
+        <label for="expected_annual_roi">Expected Annual ROI(%)</label>
+        <input type="number"step="0.01" id="expected_annual_roi" name="expected_annual_roi" required><br>
+        <label for="principal_amount">Principal Amount</label>
+        <input type="number"step="0.01" id="principal_amount" name="principal_amount" required><br>
+        <input type="submit" value="Optimize">
+    </form>   
+</body>
+</html>
